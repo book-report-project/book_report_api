@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { Book } from 'src/book/entities/book.entitiy';
 
 @Module({
     imports:[
@@ -12,7 +13,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
             database: process.env.DB_NAME,
             synchronize: process.env.NODE_ENV !== 'prod',
             logging: process.env.NODE_ENV !== 'prod',
-            entities: [], // db 들어가는 곳
+            entities: [Book], // db 들어가는 곳
           }),
     ]
 })
