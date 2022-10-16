@@ -1,5 +1,8 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { ConfigModule } from '@nestjs/config';
+import * as Joi from 'joi';
+
 import { Book } from 'src/book/entities/book.entitiy';
 import { Feed } from 'src/feed/entities/feed.entitiy';
 

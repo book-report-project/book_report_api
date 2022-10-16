@@ -1,5 +1,6 @@
-import { BaseEntity, Column, CreateDateColumn, DeleteDateColumn, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { BaseEntity, Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
+@Entity()
 export class Book extends BaseEntity{
     @PrimaryGeneratedColumn()
     no: number;

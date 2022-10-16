@@ -1,6 +1,6 @@
-import { Book } from "src/book/entities/book.entitiy";
-import { BaseEntity, Column, CreateDateColumn, DeleteDateColumn, OneToMany, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
+import { BaseEntity, Column, CreateDateColumn, DeleteDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn } from "typeorm";
 
+@Entity()
 export class Feed extends BaseEntity{
     @PrimaryGeneratedColumn()
     no: number;
